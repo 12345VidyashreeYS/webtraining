@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box1{
+            height: 100px;
+            width: 100px;
+            margin: 100px;
+            border: 2px solid blue;
+            border-radius: 50%;
+            background-color: blueviolet;
+            animation-name: movebox;
+            transition: 3s;
+            animation-duration: 1s;
+            animation-timing-function: 1s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes movebox{
+            0%{
+                background-color: red;
+                transform: translate(20px);
+            }
+
+            50%{
+                background-color: green;
+                transform: translateY(300px);
+            }
+
+            100%{
+                background-color: palevioletred;
+                transform: translate(20px);
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="box1"></div>
+    </center>
+</body>
+</html>

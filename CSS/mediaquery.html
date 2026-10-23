@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .box1{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            background-color: red;
+            transition: 1s;
+            transition-duration: 2s;
+            transition-property: all;
+            /* transition-timing-function: linear;
+            transition-timing-function: ease; */
+            transition-timing-function: ease-in;
+            /* transition-timing-function: ease-out;
+            transition-timing-function: ease-in-out; */
+            transition-delay: 1s;
+        }
+
+        img{
+            height: 200px;
+            width: 200px;
+            transition: 1s;
+            
+        }
+
+        img:hover{
+            height: 250px;
+            width: 250px;
+            cursor: pointer;
+
+        }
+
+        .box1:hover{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <img src="images.png">
+</body>
+</html>
